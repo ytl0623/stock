@@ -1,0 +1,39 @@
+name: Update Stock Prices
+
+on:
+  schedule:
+    # 每 30 分鐘執行一次 (注意：GitHub Actions 的排程可能會有幾分鐘的延遲)
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # 允許手動點擊按鈕觸發測試
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run update script
+      run: python main.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        # 只有當 README 有變化時才 Commit，避免空 Commit 報錯
+        git commit -m "Auto-update stock prices" || echo "No changes to commit"
+        git push
