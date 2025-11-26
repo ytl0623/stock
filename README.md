@@ -1,5 +1,4 @@
-### 📊 Asset Performance (Base: 2025-06-09)
-**Updated:** 2025-11-26 16:17:37 (Taipei Time)
+**Updated:** 2025-11-26 16:24:29 (Taipei Time)
 
 | Symbol | Start Price | Current Price | Change (%) |
 | :--- | :---: | :---: | :---: |
@@ -7,4 +6,4 @@
 | **SOFI** | $14.10 | $28.33 | 🟢 +100.92% |
 | **QQQ** | $529.49 | $608.89 | 🟢 +15.00% |
 | **RKLB** | $29.64 | $42.60 | 🟢 +43.72% |
-| BTC-USD | N/A | N/A | No Data |
+| **BTC-USD** | $110294.10 | $87530.45 | 🔴 -20.64% |
