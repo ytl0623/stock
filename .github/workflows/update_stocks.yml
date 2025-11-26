@@ -1,10 +1,10 @@
 name: Update Stock Prices
 
 on:
+  push:
   schedule:
-    # 每 30 分鐘執行一次 (注意：GitHub Actions 的排程可能會有幾分鐘的延遲)
     - cron: '*/30 * * * *'
-  workflow_dispatch: # 允許手動點擊按鈕觸發測試
+  workflow_dispatch:
 
 permissions:
   contents: write
