@@ -1,9 +1,10 @@
-### 📊 Stock Performance (Base: 2025-06-09)
-**Updated:** 2025-11-26 16:16:06 (Taipei Time)
+### 📊 Asset Performance (Base: 2025-06-09)
+**Updated:** 2025-11-26 16:17:37 (Taipei Time)
 
-| Stock | Start Price | Current Price | Change (%) |
+| Symbol | Start Price | Current Price | Change (%) |
 | :--- | :---: | :---: | :---: |
 | **GOOGL** | $175.93 | $323.44 | 🟢 +83.84% |
 | **SOFI** | $14.10 | $28.33 | 🟢 +100.92% |
 | **QQQ** | $529.49 | $608.89 | 🟢 +15.00% |
 | **RKLB** | $29.64 | $42.60 | 🟢 +43.72% |
+| BTC-USD | N/A | N/A | No Data |
