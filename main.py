@@ -3,17 +3,16 @@ import pandas as pd
 from datetime import datetime
 import pytz
 
-STOCKS = ['GOOGL', 'SOFI', 'QQQ', 'RKLB']
+STOCKS = ['GOOGL', 'SOFI', 'QQQ', 'RKLB', 'BTC-USD']
 START_DATE = '2025-06-09'
 
 def get_stock_data():
     table_rows = []
-    
     tw = pytz.timezone('Asia/Taipei')
     now = datetime.now(tw).strftime('%Y-%m-%d %H:%M:%S')
     
-    table_header = f"### 📊 Stock Performance (Base: {START_DATE})\n**Updated:** {now} (Taipei Time)\n\n"
-    table_header += "| Stock | Start Price | Current Price | Change (%) |\n"
+    table_header = f"### 📊 Asset Performance (Base: {START_DATE})\n**Updated:** {now} (Taipei Time)\n\n"
+    table_header += "| Symbol | Start Price | Current Price | Change (%) |\n"
     table_header += "| :--- | :---: | :---: | :---: |\n"
 
     print(f"Downloading data for: {STOCKS}...")
@@ -62,6 +61,7 @@ def get_stock_data():
 
 def update_readme(table_content):
     readme_path = 'README.md'
+
     markdown_template = f"""{table_content}"""
 
     with open(readme_path, 'w', encoding='utf-8') as file:
@@ -70,4 +70,3 @@ def update_readme(table_content):
 if __name__ == "__main__":
     table = get_stock_data()
     update_readme(table)
-    print("Readme updated successfully (Overwritten).")
