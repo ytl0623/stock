@@ -1,4 +1,4 @@
-**Updated:** 2025-11-29 08:50:21 (Taipei Time)
+**Updated:** 2025-11-29 10:25:19 (Taipei Time)
 
 | Symbol | Start Price | Current Price | Change (%) |
 | :--- | :---: | :---: | :---: |
